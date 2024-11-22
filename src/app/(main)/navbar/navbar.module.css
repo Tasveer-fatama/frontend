@@ -1,0 +1,137 @@
+.TopHeader {
+  border-radius: 11px;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+}
+
+.TopHeaderDetails{
+  font-size: small;
+
+  @media screen and (max-width: 768px){
+    font-size: 11px;
+  }
+}
+
+.socialIcons {
+  margin-top: 5px;
+  padding: 0 4px;
+}
+
+.socialIcons:hover {
+  color: #F14F44;
+}
+
+.MainHeader {
+  border-radius: 12px;
+}
+
+.header {
+  height: rem(60px);
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 70%;
+  padding-left: var(--mantine-spacing-lg);
+  padding-right: var(--mantine-spacing-lg);
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: var(--mantine-font-size-sm);
+  border-radius: var(--mantine-radius-xl);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: rem(46px);
+    width: 100%;
+  }
+
+  @mixin hover {
+    background-color: #F0F2F4;
+    color: #333333;
+  }
+}
+
+.active {
+  color: #fff;
+  background-color: #333333;
+}
+.active:hover {
+  color: #fff;
+  background-color: #333333;
+}
+
+
+/* .ScheduledCallbtn {
+      background-color: #F0F2F4;
+      color: #333333;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 15px;
+      border: 3px solid transparent;
+      background-image: linear-gradient(#F0F2F4, #F0F2F4), linear-gradient(to right, blue, #333333, #F14F44);
+      border-image: linear-gradient(to right, blue, #333333, #F14F44) 1 stretch;
+    } */
+
+.subLink {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+  }
+}
+
+.dropdownFooter {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+  margin: calc(var(--mantine-spacing-md) * -1);
+  margin-top: var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
+
+.logButton:hover {
+  background-color: #F0F2F4;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1em 3em;
+  border-radius: 2em;
+  border: none;
+  background-color: #fff;
+  color: #333333;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(90deg, rgb(101, 46, 229), #F14F44);
+  border-radius: 2em;
+  transition: all 0.4s ease;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+.button:hover {
+  z-index: -10;
+  background: linear-gradient(90deg, rgb(101, 46, 229), #F14F44);
+  color: #fff;
+}
